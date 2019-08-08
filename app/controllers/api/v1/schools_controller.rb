@@ -22,7 +22,7 @@ class Api::V1::SchoolsController < ApplicationController
   private
 
   def school_params
-    params.permit(:name, :city, :state, :program)
+    params.required(:school).permit(:name, :city, :state, :program)
   end
 
   def find_school
