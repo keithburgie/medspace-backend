@@ -13,11 +13,6 @@ class Api::V1::SchoolsController < ApplicationController
 
   def update
     @school.update(school_params)
-    if @school.save
-      render json: @school, status: :accepted
-    else
-      render json: {errors: @school.errors.full_messages}, status: :unprocessible_entity
-    end
   end
 
   private

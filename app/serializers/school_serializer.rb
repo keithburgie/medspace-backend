@@ -4,5 +4,5 @@ class SchoolSerializer < ActiveModel::Serializer
   has_many :prompts
   has_many :todos
   # has_many :essays, through: :prompts ### model doesn't currently have essays
-  attributes :id, :name, :city, :state, :program, :created_at
+  attributes :id, :name, :city, :state, :program
 end

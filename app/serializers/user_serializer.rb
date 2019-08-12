@@ -3,5 +3,5 @@ class UserSerializer < ActiveModel::Serializer
   has_many :schools, through: :user_schools
   has_many :essays
   has_many :todos
-  attributes :id, :username, :name, :email, :password
+  attributes :id, :username, :name, :email
 end
