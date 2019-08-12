@@ -18,7 +18,7 @@ class Api::V1::SchoolsController < ApplicationController
   private
 
   def school_params
-    params.required(:school).permit(:name, :city, :state, :program)
+    params.require(:school).permit(:name, :city, :state, :program)
   end
 
   def find_school
