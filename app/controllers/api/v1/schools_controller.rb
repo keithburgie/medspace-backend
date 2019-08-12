@@ -2,7 +2,8 @@ class Api::V1::SchoolsController < ApplicationController
   before_action :find_school, only: [:update, :show]
 
   def index
-    @schools = School.all
+    # @schools = School.all
+    @schools = School.limit(params[:limit])
     render json: @schools
   end
 
