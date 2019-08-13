@@ -11,6 +11,7 @@ School.destroy_all
 UserSchool.destroy_all
 
 user1 = User.create!(name: 'keith burgie', username: "kburgie", email: "keith@email.com", password: 'password')
+user2 = User.create!(name: 'frank reynolds', username: "freynolds", email: "frank@email.com", password: 'password')
 
 school1 = School.create!(state: "Alabama", name: "Alabama College of Osteopathic Medicine", city: "Dothan", program: "DO")
   school2 = School.create!(state: "Alabama", name: "Edward Via College of Osteopathic Medicine", city: "Aubur", program: "DO")
@@ -214,6 +215,8 @@ school1 = School.create!(state: "Alabama", name: "Alabama College of Osteopathic
   school200 = School.create!(state: "Wisconsin", name: "University of Wisconsin School of Medicine and Public Health", city: "Madison", program: "MD")
 
 userschool1 = UserSchool.create!(user_id: user1.id, school_id: school191.id)
+userschool2 = UserSchool.create!(user_id: user2.id, school_id: school100.id)
+userschool3 = UserSchool.create!(user_id: user2.id, school_id: school14.id)
 
 todo1 = Todo.create!(user_id: user1.id, school_id: school191.id, task: "Request Recs", done: true, note: "", due: Date.new(2019, 8, 23))
 todo2 = Todo.create!(user_id: user1.id, school_id: school191.id, task: "Send Recs", done: true, note: "", due: Date.new(2019, 8, 23))
