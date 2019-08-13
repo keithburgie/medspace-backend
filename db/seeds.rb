@@ -214,8 +214,6 @@ school1 = School.create!(state: "Alabama", name: "Alabama College of Osteopathic
   school200 = School.create!(state: "Wisconsin", name: "University of Wisconsin School of Medicine and Public Health", city: "Madison", program: "MD")
 
 userschool1 = UserSchool.create!(user_id: user1.id, school_id: school191.id)
-  userschool2 = UserSchool.create!(user_id: user1.id, school_id: school73.id)
-  userschool3 = UserSchool.create!(user_id: user1.id, school_id: school22.id)
 
 todo1 = Todo.create!(user_id: user1.id, school_id: school191.id, task: "Request Recs", done: true, note: "", due: Date.new(2019, 8, 23))
 todo2 = Todo.create!(user_id: user1.id, school_id: school191.id, task: "Send Recs", done: true, note: "", due: Date.new(2019, 8, 23))
