@@ -1,5 +1,4 @@
 class Api::V1::UserSchoolsController < ApplicationController
-
   before_action :find_userSchool, only: [:show, :destroy]
 
   def index
@@ -18,6 +17,7 @@ class Api::V1::UserSchoolsController < ApplicationController
 
   def destroy
     @userSchool.destroy
+    render json: @userSchool
   end
 
   private

@@ -18,10 +18,12 @@ class Api::V1::TodosController < ApplicationController
 
   def update
     @todo.update(todo_params)
+    render json: @todo
   end
 
   def destroy
     @todo.destroy
+    render json: @todo
   end
 
   private
