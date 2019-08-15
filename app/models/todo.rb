@@ -1,4 +1,3 @@
 class Todo < ApplicationRecord
-  belongs_to :user
-  belongs_to :school
+  belongs_to :todo_list
 end

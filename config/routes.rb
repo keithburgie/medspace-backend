@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :schools, only: [:index, :update, :show]
       resources :user_schools, only: [:index, :create, :show, :destroy]
       resources :todos, only: [:index, :create, :update, :show, :destroy]
+      resources :todo_lists, only: [:index, :create, :update, :show, :destroy]
     end
   end
 
