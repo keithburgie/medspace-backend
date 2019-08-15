@@ -219,6 +219,8 @@ userschool2 = UserSchool.create!(user_id: user2.id, school_id: school100.id)
 userschool3 = UserSchool.create!(user_id: user2.id, school_id: school14.id)
 
 todoList1 = TodoList.create!(user_school_id: userschool1.id)
+todoList11 = TodoList.create!(user_school_id: userschool2.id)
+todoList21 = TodoList.create!(user_school_id: userschool3.id)
 
 todo1 = Todo.create!(todo_list_id: todoList1.id, task: "Request Recs", done: true, note: "", due: Date.new(2019, 8, 23))
 todo2 = Todo.create!(todo_list_id: todoList1.id, task: "Send Recs", done: true, note: "", due: Date.new(2019, 8, 23))
@@ -227,3 +229,19 @@ todo4 = Todo.create!(todo_list_id: todoList1.id, task: "Follow Up", done: false,
 todo5 = Todo.create!(todo_list_id: todoList1.id, task: "Send Secondary", done: false, note: "", due: Date.new(2019, 8, 23))
 todo6 = Todo.create!(todo_list_id: todoList1.id, task: "Interview", done: false, note: "", due: Date.new(2019, 8, 23))
 todo7 = Todo.create!(todo_list_id: todoList1.id, task: "Send Thank Yous", done: false, note: "", due: Date.new(2019, 8, 23))
+
+todo11 = Todo.create!(todo_list_id: todoList11.id, task: "Request Recs", done: true, note: "", due: Date.new(2019, 8, 23))
+todo12 = Todo.create!(todo_list_id: todoList11.id, task: "Send Recs", done: true, note: "", due: Date.new(2019, 8, 23))
+todo13 = Todo.create!(todo_list_id: todoList11.id, task: "Send Essay", done: false, note: "", due: Date.new(2019, 8, 23))
+todo14 = Todo.create!(todo_list_id: todoList11.id, task: "Follow Up", done: false, note: "", due: Date.new(2019, 8, 23))
+todo15 = Todo.create!(todo_list_id: todoList11.id, task: "Send Secondary", done: false, note: "", due: Date.new(2019, 8, 23))
+todo16 = Todo.create!(todo_list_id: todoList11.id, task: "Interview", done: false, note: "", due: Date.new(2019, 8, 23))
+todo17 = Todo.create!(todo_list_id: todoList11.id, task: "Send Thank Yous", done: false, note: "", due: Date.new(2019, 8, 23))
+
+todo21 = Todo.create!(todo_list_id: todoList21.id, task: "Request Recs", done: true, note: "", due: Date.new(2019, 8, 23))
+todo22 = Todo.create!(todo_list_id: todoList21.id, task: "Send Recs", done: true, note: "", due: Date.new(2019, 8, 23))
+todo23 = Todo.create!(todo_list_id: todoList21.id, task: "Send Essay", done: false, note: "", due: Date.new(2019, 8, 23))
+todo24 = Todo.create!(todo_list_id: todoList21.id, task: "Follow Up", done: false, note: "", due: Date.new(2019, 8, 23))
+todo25 = Todo.create!(todo_list_id: todoList21.id, task: "Send Secondary", done: false, note: "", due: Date.new(2019, 8, 23))
+todo26 = Todo.create!(todo_list_id: todoList21.id, task: "Interview", done: false, note: "", due: Date.new(2019, 8, 23))
+todo27 = Todo.create!(todo_list_id: todoList21.id, task: "Send Thank Yous", done: false, note: "", due: Date.new(2019, 8, 23))
