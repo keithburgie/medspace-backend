@@ -28,7 +28,7 @@ class Api::V1::TodosController < ApplicationController
   private
 
   def todo_params
-    params.require(:todo).permit(:todo_list_id, :task, :done, :note, :due)
+    params.permit(:user_school_id, :task, :done, :note, :due)
   end
 
   def find_todo

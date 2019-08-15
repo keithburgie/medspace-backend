@@ -1,3 +1,3 @@
 class TodoSerializer < ActiveModel::Serializer
-  attributes :id, :task, :done, :note, :due
+  attributes :id, :user_school_id, :task, :done, :note, :due
 end

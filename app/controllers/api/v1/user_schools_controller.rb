@@ -23,7 +23,9 @@ class Api::V1::UserSchoolsController < ApplicationController
   private
 
   def user_school_params
-    params.require(:user_school).permit(:user_id, :school_id)
+    # params.require(:user_school).permit(:user_id, :school_id)
+    params.permit(:user_id, :school_id)
+  
   end
 
   def find_user_school
