@@ -12,6 +12,16 @@ class Api::V1::UserSchoolsController < ApplicationController
 
   def create
     @user_school = UserSchool.create!(user_school_params)
+
+    tasks = [
+      "Request Recs", "Send Recs", "Send Essay", "Follow Up", 
+      "Send Secondary", "Interview", "Send Thank Yous"
+    ]
+    tasks.each do |task|
+      Todo.create!(
+        user_school_id: @user_school.id, task: task, done: false, note: "", due: Date.today
+      )
+    end
     render json: @user_school
   end
 
