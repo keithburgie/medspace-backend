@@ -27,9 +27,6 @@ class Api::V1::UserSchoolsController < ApplicationController
     render json: @user_school
   end
 
-
-
-
   def destroy
     @user_school.destroy
     render json: @user_school
