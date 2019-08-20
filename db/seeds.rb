@@ -11,8 +11,8 @@ School.destroy_all
 UserSchool.destroy_all
 Todo.destroy_all
 
-user1 = User.create!(name: 'keith burgie', username: "kburgie", email: "keith@email.com", password: 'password')
-user2 = User.create!(name: 'frank reynolds', username: "freynolds", email: "frank@email.com", password: 'password')
+user1 = User.create!(name: 'keith', username: "kburgie", email: "keith@email.com", password: 'password', bio: "bio later", avatar: "https://cdn.shopify.com/s/files/1/1190/6156/products/Some_Guy_On_A_Potato_large.jpg")
+user2 = User.create!(name: 'frank', username: "freynolds", email: "frank@email.com", password: 'password', bio: "bio later", avatar: "https://cdn.shopify.com/s/files/1/1190/6156/products/Some_Guy_On_A_Potato_large.jpg")
 
 school1 = School.create!(state: "Alabama", name: "Alabama College of Osteopathic Medicine", city: "Dothan", program: "DO")
   school2 = School.create!(state: "Alabama", name: "Edward Via College of Osteopathic Medicine", city: "Aubur", program: "DO")
