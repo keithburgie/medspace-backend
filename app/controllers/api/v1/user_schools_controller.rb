@@ -13,15 +13,21 @@ class Api::V1::UserSchoolsController < ApplicationController
   def create
     @user_school = UserSchool.create!(user_school_params)
 
+    # tasks = [
+    #   "Request Recs", "Send Recs", "Send Essay", "Follow Up", 
+    #   "Send Secondary", "Interview", "Send Thank Yous"
+    # ]
+
     tasks = [
-      "Request Recs", "Send Recs", "Send Essay", "Follow Up", 
-      "Send Secondary", "Interview", "Send Thank Yous"
+      "Ask for Recommendations", "Send Primary Application", "Send Secondary Essays", "Interview", "Send Thank Yous"
     ]
 
+    count = 1
     tasks.each do |task|
       Todo.create!(
-        user_school_id: @user_school.id, task: task, done: false, note: "", due: Date.tomorrow
+        user_school_id: @user_school.id, task: task, done: false, note: "", due: Date.tomorrow + count  
       )
+      count += 2
     end
 
     render json: @user_school
