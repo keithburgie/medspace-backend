@@ -1,24 +1,10 @@
-# README
+# Medspace
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A project management app for prospective medical students.
 
-Things you may want to cover:
+[![Medspace GIF](https://raw.githubusercontent.com/keithburgie/medspace-frontend/master/public/medspace-demo.gif)](https://www.youtube.com/watch?v=e6s682UtFzo)
 
-* Ruby version
+Built with Ruby on Rails API and React JS.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Front-end repo here:
+[https://github.com/keithburgie/medspace-frontend](https://github.com/keithburgie/medspace-frontend)
